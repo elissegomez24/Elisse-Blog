@@ -1,0 +1,146 @@
+/* Landing Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    background-color: lightgray;
+    padding: 40px; 
+    text-align: center;
+}
+
+.blog-title-container {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    top: 45%;
+}
+
+.blog-title-container::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgb(172, 112, 172); 
+    z-index: -1;
+}
+
+.blog-title-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#form-container {
+    max-width: 600px;
+    margin: 150px 0px 50px auto; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    right: 15%; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: rgb(172, 112, 172); 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(156, 81, 156);
+}
+
+footer {
+    background-color: lightgray; 
+    color: #fff;
+    margin-top: 8%;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .blog-title-container {
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .blog-title-container::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .blog-title-container h1 {
+        font-size: 1.5rem;
+    }
+
+    #form-container {
+        margin: 20px auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-title-container::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    .blog-title-container h1 {
+        font-size: 1.2rem;
+    }
+
+    #form-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 16px;
+    }
+}
