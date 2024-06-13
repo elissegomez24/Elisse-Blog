@@ -22,6 +22,7 @@ This is a personal blog application that allows users to submit blog posts with 
 ![alt text](<assets/Blog Page 2.png>)
 
 ## Deployed Application 
+https://elissegomez24.github.io/Elisse-Blog/ 
 
 ## Author 
 This blog was created by Elisse Gomez. 
